@@ -9,5 +9,15 @@
 #import "QuestionModel.h"
 
 @implementation QuestionModel
+- (QuestionModel *) initWithTitle:(NSString *) title Options:(NSArray *)options andValue:(NSDictionary *)value {
+    self = [super init];
+    if (self) {
+        self.title = title;
+        self.options = options;
+        self.value = value;
+    }
+    
+    return self;
+}
 
 @end

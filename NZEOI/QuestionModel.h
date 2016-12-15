@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface QuestionModel : NSObject
+- (QuestionModel *) initWithTitle:(NSString *) title Options:(NSArray *)options andValue:(NSDictionary *)value;
 @property NSString *title;
 @property NSArray *options;
 @property NSDictionary *value;

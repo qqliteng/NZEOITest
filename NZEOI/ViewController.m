@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -28,6 +29,7 @@
 
 - (IBAction)NZTechEOIButton:(id)sender {
     NZEOIViewController *nzEOIVC = [[NZEOIViewController alloc] init];
-    [self.navigationController pushViewController:nzEOIVC animated:YES];
+    [nzEOIVC setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentViewController:nzEOIVC animated:YES completion:nil];
 }
 @end

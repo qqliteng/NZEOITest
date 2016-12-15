@@ -21,6 +21,7 @@
 		02475EB21E01356000A3A3EF /* NZEOIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475EB01E01356000A3A3EF /* NZEOIViewController.m */; };
 		02475EB31E01356000A3A3EF /* NZEOIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02475EB11E01356000A3A3EF /* NZEOIViewController.xib */; };
 		02475EB61E0136D400A3A3EF /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475EB51E0136D400A3A3EF /* QuestionModel.m */; };
+		02D3375B1E023E9700871D05 /* SelectQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D3375A1E023E9700871D05 /* SelectQuestionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		02475EB11E01356000A3A3EF /* NZEOIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NZEOIViewController.xib; sourceTree = "<group>"; };
 		02475EB41E0136D400A3A3EF /* QuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionModel.h; sourceTree = "<group>"; };
 		02475EB51E0136D400A3A3EF /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionModel.m; sourceTree = "<group>"; };
+		02D337591E023E9700871D05 /* SelectQuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectQuestionView.h; sourceTree = "<group>"; };
+		02D3375A1E023E9700871D05 /* SelectQuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectQuestionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		02475E6D1E01131100A3A3EF /* NZEOI */ = {
 			isa = PBXGroup;
 			children = (
+				02D337581E023E6600871D05 /* QuestionViews */,
 				02475EB71E0136DE00A3A3EF /* Models */,
 				02475EA51E0113DB00A3A3EF /* Commons */,
 				02475EA11E01133300A3A3EF /* Utils */,
@@ -195,6 +199,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		02D337581E023E6600871D05 /* QuestionViews */ = {
+			isa = PBXGroup;
+			children = (
+				02D337591E023E9700871D05 /* SelectQuestionView.h */,
+				02D3375A1E023E9700871D05 /* SelectQuestionView.m */,
+			);
+			name = QuestionViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +275,7 @@
 				TargetAttributes = {
 					02475E6A1E01131100A3A3EF = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 89439ERF39;
 						ProvisioningStyle = Automatic;
 					};
 					02475E831E01131200A3A3EF = {
@@ -332,6 +346,7 @@
 				02475E761E01131200A3A3EF /* ViewController.m in Sources */,
 				02475EAB1E0125F500A3A3EF /* BaseViewController.m in Sources */,
 				02475E731E01131200A3A3EF /* AppDelegate.m in Sources */,
+				02D3375B1E023E9700871D05 /* SelectQuestionView.m in Sources */,
 				02475EB61E0136D400A3A3EF /* QuestionModel.m in Sources */,
 				02475E701E01131200A3A3EF /* main.m in Sources */,
 				02475EAE1E01261D00A3A3EF /* ViewColor.m in Sources */,
@@ -485,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 89439ERF39;
 				INFOPLIST_FILE = NZEOI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.NZEOI;
@@ -496,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 89439ERF39;
 				INFOPLIST_FILE = NZEOI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.NZEOI;
@@ -568,6 +585,7 @@
 				02475E9A1E01131200A3A3EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02475E9B1E01131200A3A3EF /* Build configuration list for PBXNativeTarget "NZEOITests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +594,7 @@
 				02475E9D1E01131200A3A3EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02475E9E1E01131200A3A3EF /* Build configuration list for PBXNativeTarget "NZEOIUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +603,7 @@
 				02475EA01E01131200A3A3EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
