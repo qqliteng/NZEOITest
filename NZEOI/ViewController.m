@@ -26,7 +26,7 @@
     [self.NZButton setTitle:@"新西兰技术移民" forState:UIControlStateNormal];
     [self.NZButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [self.NZButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
-    [self.NZButton.titleLabel setFont:[UIFont fontWithName:@"STSong" size:20]];
+    [self.NZButton.titleLabel setFont:[UIFont fontWithName:@"STHeitiSC-Light" size:20]];
     [self.NZButton setImageEdgeInsets:UIEdgeInsetsMake(5, 95, 50, 30)];
     [self.NZButton setTitleEdgeInsets:UIEdgeInsetsMake(55, -90, 5, 5)];
     [self.view addSubview:self.NZButton];
