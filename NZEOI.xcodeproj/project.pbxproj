@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020449DB1E08D6A000F58D93 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020449DA1E08D6A000F58D93 /* CoreText.framework */; };
+		020449DD1E08DE3200F58D93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020449DC1E08DE3200F58D93 /* UIKit.framework */; };
+		020449DF1E08DE3A00F58D93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020449DE1E08DE3A00F58D93 /* Foundation.framework */; };
+		020449E11E08DE4100F58D93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020449E01E08DE4100F58D93 /* CoreGraphics.framework */; };
 		02475E701E01131200A3A3EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475E6F1E01131200A3A3EF /* main.m */; };
 		02475E731E01131200A3A3EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475E721E01131200A3A3EF /* AppDelegate.m */; };
 		02475E761E01131200A3A3EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475E751E01131200A3A3EF /* ViewController.m */; };
@@ -19,7 +23,6 @@
 		02475EAB1E0125F500A3A3EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475EAA1E0125F500A3A3EF /* BaseViewController.m */; };
 		02475EAE1E01261D00A3A3EF /* ViewColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475EAD1E01261D00A3A3EF /* ViewColor.m */; };
 		02475EB21E01356000A3A3EF /* NZEOIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475EB01E01356000A3A3EF /* NZEOIViewController.m */; };
-		02475EB31E01356000A3A3EF /* NZEOIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02475EB11E01356000A3A3EF /* NZEOIViewController.xib */; };
 		02475EB61E0136D400A3A3EF /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475EB51E0136D400A3A3EF /* QuestionModel.m */; };
 		02D3375B1E023E9700871D05 /* SelectQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D3375A1E023E9700871D05 /* SelectQuestionView.m */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020449DA1E08D6A000F58D93 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		020449DC1E08DE3200F58D93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		020449DE1E08DE3A00F58D93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		020449E01E08DE4100F58D93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		02475E6B1E01131100A3A3EF /* NZEOI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NZEOI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02475E6F1E01131200A3A3EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02475E711E01131200A3A3EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,7 +74,6 @@
 		02475EAD1E01261D00A3A3EF /* ViewColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewColor.m; sourceTree = "<group>"; };
 		02475EAF1E01356000A3A3EF /* NZEOIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZEOIViewController.h; sourceTree = "<group>"; };
 		02475EB01E01356000A3A3EF /* NZEOIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZEOIViewController.m; sourceTree = "<group>"; };
-		02475EB11E01356000A3A3EF /* NZEOIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NZEOIViewController.xib; sourceTree = "<group>"; };
 		02475EB41E0136D400A3A3EF /* QuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionModel.h; sourceTree = "<group>"; };
 		02475EB51E0136D400A3A3EF /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionModel.m; sourceTree = "<group>"; };
 		02D337591E023E9700871D05 /* SelectQuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectQuestionView.h; sourceTree = "<group>"; };
@@ -79,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020449E11E08DE4100F58D93 /* CoreGraphics.framework in Frameworks */,
+				020449DF1E08DE3A00F58D93 /* Foundation.framework in Frameworks */,
+				020449DD1E08DE3200F58D93 /* UIKit.framework in Frameworks */,
+				020449DB1E08D6A000F58D93 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +109,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020449D91E08D6A000F58D93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				020449E01E08DE4100F58D93 /* CoreGraphics.framework */,
+				020449DE1E08DE3A00F58D93 /* Foundation.framework */,
+				020449DC1E08DE3200F58D93 /* UIKit.framework */,
+				020449DA1E08D6A000F58D93 /* CoreText.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		02475E621E01131100A3A3EF = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +127,7 @@
 				02475E871E01131200A3A3EF /* NZEOITests */,
 				02475E921E01131200A3A3EF /* NZEOIUITests */,
 				02475E6C1E01131100A3A3EF /* Products */,
+				020449D91E08D6A000F58D93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +154,6 @@
 				02475E751E01131200A3A3EF /* ViewController.m */,
 				02475EAF1E01356000A3A3EF /* NZEOIViewController.h */,
 				02475EB01E01356000A3A3EF /* NZEOIViewController.m */,
-				02475EB11E01356000A3A3EF /* NZEOIViewController.xib */,
 				02475E771E01131200A3A3EF /* Main.storyboard */,
 				02475E7A1E01131200A3A3EF /* Assets.xcassets */,
 				02475E7C1E01131200A3A3EF /* LaunchScreen.storyboard */,
@@ -315,7 +336,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02475EB31E01356000A3A3EF /* NZEOIViewController.xib in Resources */,
 				02475E7E1E01131200A3A3EF /* LaunchScreen.storyboard in Resources */,
 				02475E7B1E01131200A3A3EF /* Assets.xcassets in Resources */,
 				02475E791E01131200A3A3EF /* Main.storyboard in Resources */,

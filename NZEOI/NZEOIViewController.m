@@ -10,6 +10,7 @@
 #import "QuestionModel.h"
 #import "SelectQuestionView.h"
 #import "Common.h"
+#import "ViewController.h"
 @interface NZEOIViewController ()
 
 @end
@@ -18,16 +19,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    basicScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    [basicScrollView setBackgroundColor:[UIColor lightGrayColor]];
+    [self.view addSubview:basicScrollView];
+    titleLable = [[UILabel alloc] initWithFrame:CGRectMake(60, 20, kScreenWidth - 40, 40)];
+    [titleLable setFont:[UIFont fontWithName:@"STSong" size:28]];
+    [titleLable setText:@"新西兰技术移民打分表"];
+    [titleLable setTextColor:[UIColor darkGrayColor]];
+    [basicScrollView addSubview:titleLable];
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 20, 40, 40)];
+    [backButton setImage:[UIImage imageNamed:@"backNormal"] forState:UIControlStateNormal];
+    [backButton setImage:[UIImage imageNamed:@"backSelected"] forState:UIControlStateSelected];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [basicScrollView addSubview:backButton];
+    
     NSArray *tempArray = [NSArray arrayWithObjects:@"未满20岁",@"20-29岁",@"30-39岁",@"40-44岁",@"45-49岁",@"50-55岁", nil];
     NSDictionary *tempDic = [NSDictionary dictionaryWithObjectsAndKeys:@"未满20岁", @"0", @"20-29岁", @"30", @"30-39岁", @"25", @"40-44岁",@"20", @"45-49岁", @"10", @"50-55岁", @"5", nil];
     QuestionModel *ageQuestionModel = [[QuestionModel alloc]initWithTitle:@"年龄" Options:tempArray andValue:tempDic];
     SelectQuestionView *ageQuestionView = [[SelectQuestionView alloc] initWithQuestionModel:ageQuestionModel andFrame:CGRectMake(0, kNavTabHeight + 20, kScreenWidth, (tempArray.count + 1) * 40)];
-    [self.NZEOIScrollView addSubview:ageQuestionView];
+    [basicScrollView addSubview:ageQuestionView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) back {
+    ViewController *vc = [[ViewController alloc] init];
+    [vc setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 /*

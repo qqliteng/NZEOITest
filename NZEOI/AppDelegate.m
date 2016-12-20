@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CoreText/CoreText.h>
 
 @interface AppDelegate ()
 
@@ -16,14 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    if (![self isFontDownloaded:@"STSong"]) {
+        [self downloadFont:@"STSong"];
+    }
     return YES;
 }
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
 }
 
 
@@ -47,5 +49,36 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+- (BOOL)isFontDownloaded:(NSString *)fontName {
+    UIFont* aFont = [UIFont fontWithName:fontName size:12.0];
+    if (aFont && ([aFont.fontName compare:fontName] == NSOrderedSame
+                  || [aFont.familyName compare:fontName] == NSOrderedSame)) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+- (void) downloadFont:(NSString *)fontName {
+    // 用字体的 PostScript 名字创建一个 Dictionary
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionaryWithObjectsAndKeys:fontName, kCTFontNameAttribute, nil];
+    
+    // 创建一个字体描述对象 CTFontDescriptorRef
+    CTFontDescriptorRef desc = CTFontDescriptorCreateWithAttributes((__bridge CFDictionaryRef)attrs);
+    
+    // 将字体描述对象放到一个 NSMutableArray 中
+    NSMutableArray *descs = [NSMutableArray arrayWithCapacity:0];
+    [descs addObject:(__bridge id)desc];
+    CFRelease(desc);
+    
+    __block BOOL errorDuringDownload = NO;
+    
+    
+    CTFontDescriptorMatchFontDescriptorsWithProgressHandler( (__bridge CFArrayRef)descs, NULL,  ^(CTFontDescriptorMatchingState state, CFDictionaryRef progressParameter) {
+        return (BOOL)YES;
+    });
+
+}
 
 @end

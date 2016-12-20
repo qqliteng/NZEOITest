@@ -24,8 +24,8 @@
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meJ-6x-eEZ">
                                 <rect key="frame" x="100" y="28" width="175" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="titleEdgeInsets" minX="-95" minY="64" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="20" minY="-30" maxX="0.0" maxY="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="64" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="新西兰技术移民打分" image="NZFlag">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,6 +37,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="NZButton" destination="meJ-6x-eEZ" id="4WL-Kz-Fdg"/>
                         <outlet property="NZTechEOIButton" destination="meJ-6x-eEZ" id="CBx-ih-6iy"/>
                     </connections>
                 </viewController>

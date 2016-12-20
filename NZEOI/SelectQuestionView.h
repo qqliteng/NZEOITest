@@ -11,6 +11,6 @@
 @interface SelectQuestionView : UIView
 - (SelectQuestionView *) initWithQuestionModel:(QuestionModel *) questionModel andFrame:(CGRect) frame;
 @property QuestionModel *mQuestionModel;
-@property (weak, nonatomic) UILabel *titleLabel;
+@property UILabel *titleLabel;
 
 @end

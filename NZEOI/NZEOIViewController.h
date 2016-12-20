@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NZEOIViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIScrollView *NZEOIScrollView;
+@interface NZEOIViewController : UIViewController {
+    UIScrollView *basicScrollView;
+    UILabel *titleLable;
+}
+
 
 @end

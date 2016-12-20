@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.NZButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
+    [self.NZButton.titleLabel setFont:[UIFont fontWithName:@"STSong" size:20]];
+    [self.NZButton setImageEdgeInsets:UIEdgeInsetsMake(5, 30, 50, 30)];
+    [self.NZButton setTitleEdgeInsets:UIEdgeInsetsMake(55, 5, 5, 5)];
     // Do any additional setup after loading the view, typically from a nib.
     
 }
