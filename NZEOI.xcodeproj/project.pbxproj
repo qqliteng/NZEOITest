@@ -11,10 +11,10 @@
 		020449DD1E08DE3200F58D93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020449DC1E08DE3200F58D93 /* UIKit.framework */; };
 		020449DF1E08DE3A00F58D93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020449DE1E08DE3A00F58D93 /* Foundation.framework */; };
 		020449E11E08DE4100F58D93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020449E01E08DE4100F58D93 /* CoreGraphics.framework */; };
+		020449E41E0918B800F58D93 /* UIColor+StringServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 020449E31E0918B800F58D93 /* UIColor+StringServer.m */; };
 		02475E701E01131200A3A3EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475E6F1E01131200A3A3EF /* main.m */; };
 		02475E731E01131200A3A3EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475E721E01131200A3A3EF /* AppDelegate.m */; };
 		02475E761E01131200A3A3EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475E751E01131200A3A3EF /* ViewController.m */; };
-		02475E791E01131200A3A3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02475E771E01131200A3A3EF /* Main.storyboard */; };
 		02475E7B1E01131200A3A3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02475E7A1E01131200A3A3EF /* Assets.xcassets */; };
 		02475E7E1E01131200A3A3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02475E7C1E01131200A3A3EF /* LaunchScreen.storyboard */; };
 		02475E891E01131200A3A3EF /* NZEOITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475E881E01131200A3A3EF /* NZEOITests.m */; };
@@ -49,13 +49,14 @@
 		020449DC1E08DE3200F58D93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		020449DE1E08DE3A00F58D93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		020449E01E08DE4100F58D93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		020449E21E0918B800F58D93 /* UIColor+StringServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+StringServer.h"; sourceTree = "<group>"; };
+		020449E31E0918B800F58D93 /* UIColor+StringServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+StringServer.m"; sourceTree = "<group>"; };
 		02475E6B1E01131100A3A3EF /* NZEOI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NZEOI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02475E6F1E01131200A3A3EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02475E711E01131200A3A3EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		02475E721E01131200A3A3EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		02475E741E01131200A3A3EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		02475E751E01131200A3A3EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		02475E781E01131200A3A3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02475E7A1E01131200A3A3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02475E7D1E01131200A3A3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02475E7F1E01131200A3A3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,7 +155,6 @@
 				02475E751E01131200A3A3EF /* ViewController.m */,
 				02475EAF1E01356000A3A3EF /* NZEOIViewController.h */,
 				02475EB01E01356000A3A3EF /* NZEOIViewController.m */,
-				02475E771E01131200A3A3EF /* Main.storyboard */,
 				02475E7A1E01131200A3A3EF /* Assets.xcassets */,
 				02475E7C1E01131200A3A3EF /* LaunchScreen.storyboard */,
 				02475E7F1E01131200A3A3EF /* Info.plist */,
@@ -192,6 +192,8 @@
 		02475EA11E01133300A3A3EF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				020449E21E0918B800F58D93 /* UIColor+StringServer.h */,
+				020449E31E0918B800F58D93 /* UIColor+StringServer.m */,
 				02475EA21E0113C100A3A3EF /* NotificationView.h */,
 				02475EA31E0113C100A3A3EF /* NotificationView.m */,
 			);
@@ -338,7 +340,6 @@
 			files = (
 				02475E7E1E01131200A3A3EF /* LaunchScreen.storyboard in Resources */,
 				02475E7B1E01131200A3A3EF /* Assets.xcassets in Resources */,
-				02475E791E01131200A3A3EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02475E761E01131200A3A3EF /* ViewController.m in Sources */,
+				020449E41E0918B800F58D93 /* UIColor+StringServer.m in Sources */,
 				02475EAB1E0125F500A3A3EF /* BaseViewController.m in Sources */,
 				02475E731E01131200A3A3EF /* AppDelegate.m in Sources */,
 				02D3375B1E023E9700871D05 /* SelectQuestionView.m in Sources */,
@@ -407,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		02475E771E01131200A3A3EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02475E781E01131200A3A3EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		02475E7C1E01131200A3A3EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

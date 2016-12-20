@@ -8,9 +8,9 @@
 
 #import "AppDelegate.h"
 #import <CoreText/CoreText.h>
-
+#import "ViewController.h"
 @interface AppDelegate ()
-
+@property (strong, nonatomic) ViewController *viewController;
 @end
 
 @implementation AppDelegate
@@ -20,6 +20,12 @@
     if (![self isFontDownloaded:@"STSong"]) {
         [self downloadFont:@"STSong"];
     }
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.viewController = [[ViewController alloc] init];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -71,9 +77,6 @@
     NSMutableArray *descs = [NSMutableArray arrayWithCapacity:0];
     [descs addObject:(__bridge id)desc];
     CFRelease(desc);
-    
-    __block BOOL errorDuringDownload = NO;
-    
     
     CTFontDescriptorMatchFontDescriptorsWithProgressHandler( (__bridge CFArrayRef)descs, NULL,  ^(CTFontDescriptorMatchingState state, CFDictionaryRef progressParameter) {
         return (BOOL)YES;

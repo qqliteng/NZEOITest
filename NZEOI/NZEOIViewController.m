@@ -11,6 +11,7 @@
 #import "SelectQuestionView.h"
 #import "Common.h"
 #import "ViewController.h"
+#import "UIColor+StringServer.h"
 @interface NZEOIViewController ()
 
 @end
@@ -20,14 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     basicScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-    [basicScrollView setBackgroundColor:[UIColor lightGrayColor]];
+    [basicScrollView setBackgroundColor:[UIColor hexStringToColor:@"f3f3f3"]];
     [self.view addSubview:basicScrollView];
-    titleLable = [[UILabel alloc] initWithFrame:CGRectMake(60, 20, kScreenWidth - 40, 40)];
+    titleLable = [[UILabel alloc] initWithFrame:CGRectMake(40, 25, kScreenWidth - 40, 40)];
     [titleLable setFont:[UIFont fontWithName:@"STSong" size:28]];
     [titleLable setText:@"新西兰技术移民打分表"];
     [titleLable setTextColor:[UIColor darkGrayColor]];
     [basicScrollView addSubview:titleLable];
-    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 20, 40, 40)];
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 35, 30, 30)];
     [backButton setImage:[UIImage imageNamed:@"backNormal"] forState:UIControlStateNormal];
     [backButton setImage:[UIImage imageNamed:@"backSelected"] forState:UIControlStateSelected];
     [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
@@ -46,9 +47,9 @@
 }
 
 - (void) back {
-    ViewController *vc = [[ViewController alloc] init];
-    [vc setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
-    [self presentViewController:vc animated:YES completion:nil];
+    ViewController *VC = [[ViewController alloc] init];
+    [VC setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentViewController:VC animated:YES completion:nil];
 }
 
 /*

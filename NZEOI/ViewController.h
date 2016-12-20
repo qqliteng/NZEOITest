@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *NZTechEOIButton;
-- (IBAction)NZTechEOIButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *NZButton;
+
 
 
 @end
