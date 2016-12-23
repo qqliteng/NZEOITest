@@ -25,6 +25,7 @@
 		02475EB21E01356000A3A3EF /* NZEOIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475EB01E01356000A3A3EF /* NZEOIViewController.m */; };
 		02475EB61E0136D400A3A3EF /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02475EB51E0136D400A3A3EF /* QuestionModel.m */; };
 		02D3375B1E023E9700871D05 /* SelectQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D3375A1E023E9700871D05 /* SelectQuestionView.m */; };
+		666A47145C37A3765D76FD36 /* libPods-NZEOI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4D099F76E1CBC37F660AC0 /* libPods-NZEOI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,9 @@
 		02475EB51E0136D400A3A3EF /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionModel.m; sourceTree = "<group>"; };
 		02D337591E023E9700871D05 /* SelectQuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectQuestionView.h; sourceTree = "<group>"; };
 		02D3375A1E023E9700871D05 /* SelectQuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectQuestionView.m; sourceTree = "<group>"; };
+		5C4D099F76E1CBC37F660AC0 /* libPods-NZEOI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NZEOI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EAEAF6163503EA67FF5DB5 /* Pods-NZEOI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZEOI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NZEOI/Pods-NZEOI.debug.xcconfig"; sourceTree = "<group>"; };
+		DB1A1BCC2B09A99B6C22F92E /* Pods-NZEOI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZEOI.release.xcconfig"; path = "Pods/Target Support Files/Pods-NZEOI/Pods-NZEOI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 				020449DF1E08DE3A00F58D93 /* Foundation.framework in Frameworks */,
 				020449DD1E08DE3200F58D93 /* UIKit.framework in Frameworks */,
 				020449DB1E08D6A000F58D93 /* CoreText.framework in Frameworks */,
+				666A47145C37A3765D76FD36 /* libPods-NZEOI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +122,7 @@
 				020449DE1E08DE3A00F58D93 /* Foundation.framework */,
 				020449DC1E08DE3200F58D93 /* UIKit.framework */,
 				020449DA1E08D6A000F58D93 /* CoreText.framework */,
+				5C4D099F76E1CBC37F660AC0 /* libPods-NZEOI.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 				02475E921E01131200A3A3EF /* NZEOIUITests */,
 				02475E6C1E01131100A3A3EF /* Products */,
 				020449D91E08D6A000F58D93 /* Frameworks */,
+				4716111F68F0FE4DBD39C097 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +238,15 @@
 			name = QuestionViews;
 			sourceTree = "<group>";
 		};
+		4716111F68F0FE4DBD39C097 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4EAEAF6163503EA67FF5DB5 /* Pods-NZEOI.debug.xcconfig */,
+				DB1A1BCC2B09A99B6C22F92E /* Pods-NZEOI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02475E981E01131200A3A3EF /* Build configuration list for PBXNativeTarget "NZEOI" */;
 			buildPhases = (
+				67286EC6A9BE15905C813448 /* [CP] Check Pods Manifest.lock */,
 				02475E671E01131100A3A3EF /* Sources */,
 				02475E681E01131100A3A3EF /* Frameworks */,
 				02475E691E01131100A3A3EF /* Resources */,
+				0C4915AEC5646B6B5D979701 /* [CP] Embed Pods Frameworks */,
+				7CD817570DEAE21A8A875861 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -358,6 +377,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C4915AEC5646B6B5D979701 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NZEOI/Pods-NZEOI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67286EC6A9BE15905C813448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD817570DEAE21A8A875861 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NZEOI/Pods-NZEOI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02475E671E01131100A3A3EF /* Sources */ = {
@@ -512,6 +579,7 @@
 		};
 		02475E991E01131200A3A3EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4EAEAF6163503EA67FF5DB5 /* Pods-NZEOI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89439ERF39;
@@ -524,6 +592,7 @@
 		};
 		02475E9A1E01131200A3A3EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1A1BCC2B09A99B6C22F92E /* Pods-NZEOI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89439ERF39;

@@ -39,6 +39,8 @@
     QuestionModel *ageQuestionModel = [[QuestionModel alloc]initWithTitle:@"年龄" Options:tempArray andValue:tempDic];
     SelectQuestionView *ageQuestionView = [[SelectQuestionView alloc] initWithQuestionModel:ageQuestionModel andFrame:CGRectMake(0, kNavTabHeight + 20, kScreenWidth, (tempArray.count + 1) * 40)];
     [basicScrollView addSubview:ageQuestionView];
+    
+    NSArray *tempArray2 = [NSArray arrayWithObjects:@"", nil];
 }
 
 - (void)didReceiveMemoryWarning {
